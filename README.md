@@ -28,3 +28,7 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+## Deploy
+
+Listo para conectar este repositorio a AWS Amplify y desplegar desde la rama `main`.
