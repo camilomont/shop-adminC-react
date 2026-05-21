@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-lavender text-ink;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-white;
+  }
+
+  .input-minimal {
+    @apply w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-sm text-ink transition placeholder:text-muted/80 focus:border-lavender-dark/30 focus:outline-none focus:ring-2 focus:ring-lavender/60 disabled:cursor-not-allowed disabled:bg-canvas disabled:opacity-60;
+  }
+
+  .input-minimal-error {
+    @apply border-peach-dark/40 focus:border-peach-dark/50 focus:ring-peach/80;
+  }
+
+  .id-chip {
+    @apply inline-block rounded-lg bg-canvas px-2 py-0.5 font-mono text-xs text-muted;
+  }
+}
